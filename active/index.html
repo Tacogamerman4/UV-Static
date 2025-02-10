@@ -1,427 +1,77 @@
 <!DOCTYPE html>
 <html>
    <head>
-              <link rel="icon" type="image/x-icon" href="Logo.png">
+      <link rel="icon" type="image/x-icon" href="Logo.png">
       <style>
-   .disclaimer {
-      position: fixed;
-      top: 10px;
-      font-size: 12px;
-      color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-      padding: 5px 10px;
-      border-radius: 5px;
-   }
-
-   .disclaimer-right {
-      right: 10px;
-   }
-
-   .disclaimer-left {
-      left: 10px;
-   }
-</style>
-
-<!-- Top Right Disclaimer -->
-<div class="disclaimer disclaimer-right">
-   If a "Page Not Found" error appears after entering a link, simply refresh the page.
-</div>
-
-<!-- Top Left Disclaimer -->
-<div class="disclaimer disclaimer-left">
-   Struggling or in crisis? Call or text <strong>988</strong> for free, confidential support.
-</div>
-
-      <style>
-   html, body {
-   overflow: hidden;
-   height: 100%;
-}
-   </style>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>&#65279;</title>
-      <!--<link rel="stylesheet" href="../../assets/styles/css/global.min.css">-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<style>
-   /* Custom CSS for black theme */
-body {
-  background-color:#120924;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 0;
-}
-   #content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh; /* Make content fill the screen */
-}
-
-#searchbar, #uv-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-#popularSites {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-
-
-
-#header {
-  background-color: #120924;
-  
-  padding: 20px;
-  text-align: center;
-}
-
-#header h1 {
-  margin: 0;
-  font-size: 24px;
-  font-family: 'Arial', sans-serif;
-  color: #FFFFFF;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-#header img {
-  width: 80%;
-  height: auto;
-}
-
-
-
-#content h1 {
-  font-size: 24px;
-  cursor:pointer;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-
-
-.form__input {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  width: 300px;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-  background-color: #222;
-  text-align: center;
-  color: #FFFFFF;
-  cursor:cell;
-}
-
-a{
-  text-decoration: none;
-  color:white;
-  width:50px;
-  height:50px;
-  padding-right: 1px;
-  padding-left: 1px;
-  text-align: center;
-  align-self: center;
-}
-
-.form__input::placeholder {
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.form_input:hover{
-  cursor:cell;
-}
-
-.form__input:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #99ccff;
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  height:15px;
-  background-color: #000;
-  padding-top: 7.5px;
-  padding-bottom: 10px;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 14px;
-}
-
-#footer p {
-  margin: 0;
-}
-
-#canvas {
-    display: block;
-    position: fixed;  /* Cover the viewport */
-    top: 0;
-    left: 0;
-    width: 100vw;  /* 100% of the viewport width */
-    height: 100vh; /* 100% of the viewport height */
-    
-    pointer-events: none; /* Prevents canvas from interfering with interactions */
-}
-
-            #popularSites img {
-                width: 50px;
-                height: 50px;
-                margin: 10px;
-                cursor: pointer;
-                border-radius: 10px;
-                transition: transform 0.2s;
-            }
-            #popularSites img:hover {
-                transform: scale(1.1);
-            }
-
-            #bigTitle img {
-               width: 75vw;
-            }
-
-
-.fa {
-  font-size: 24px;
-  margin-right: 10px;
-  color: #fff;
-}
-
-.fa:hover {
-  color: #aaa;
-}
-</style> 
-      <link rel="icon" type="image/x-icon" href="logo.png">
-      
-      <link rel="shortcut icon" type="image/jpg" href="logo.png"/>
-      
-      <link rel="stylesheet" href="../assets/font-awesome/css/all.css">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+         .disclaimer {
+            position: fixed;
+            top: 10px;
+            font-size: 12px;
+            color: #FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 10px;
+            border-radius: 5px;
+         }
+         .disclaimer-right {
+            right: 10px;
+         }
+         .disclaimer-left {
+            left: 10px;
+         }
+         html, body {
+            overflow: hidden;
+            height: 100%;
+         }
+         body {
+            background-color:#120924;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+         }
+         #content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+         }
+         #searchbar, #uv-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+         }
+         #title {
+            font-size: 24px;
+            font-family: 'Open Sans', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+         }
+         .form__input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 300px;
+            background-color: #222;
+            text-align: center;
+            color: #FFFFFF;
+         }
+         .form__input::placeholder {
+            color: #FFFFFF;
+            text-align: center;
+         }
+      </style>
    </head>
    <body>
-      
-      
-      <canvas id="canvas"></canvas>
-      <div id="header">
-      </div>
       <div id="content">
-         
-
+         <div id="title">Untitled</div>
          <form id="uv-form">
             <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
             <input id="uv-address" type="text" placeholder="Enter URL..." class="form__input"/>
-          </form>
-           <div id="popularSites">
-                <img src="https://img.icons8.com/?size=100&id=T2CwYFr5ouk6&format=png&color=000000" alt="Xbox" onclick="autofill('http://xbox.com/play')">
-                <img src="https://img.icons8.com/?size=100&id=48137&format=png&color=000000" alt="Now.gg" onclick="autofill('https://now.gg/')">
-                <img src="https://img.icons8.com/?size=100&id=48166&format=png&color=000000" alt="DuckDuckGo" onclick="autofill('https://duckduckgo.com')">
-                <img src="https://img.icons8.com/?size=100&id=92582&format=png&color=000000" alt="GeForce NOW" onclick="autofill('https://play.geforcenow.com/')">
-                <img src="https://img.icons8.com/?size=100&id=KeTtCQ_b-ZiV&format=png&color=000000" alt="TikTok" onclick="autofill('https://tiktok.com')">
-                <img src="https://img.icons8.com/?size=100&id=53013&format=png&color=000000" alt="Twitch" onclick="autofill('https://twitch.tv')">
-               <img src="https://img.icons8.com/?size=100&id=kTuxVYRKeKEY&format=png&color=000000" alt="ChatGPT" onclick="autofill('https://chatgpt.com')">
-            </div>
-          <div class="desc left-margin">
-            <p id="uv-error"></p>
-            <pre id="uv-error-code"></pre>
-          </div>
-        
+         </form>
       </div>
-<script>
-   // Stars and Meteors Animation Code
-
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-
-let stars = [];
-let meteors = [];
-const starCount = 300;
-
-const minSpeed = 10;
-const maxSpeed = 30;
-const minDelay = 1200;
-const maxDelay = 4200;
-const starColor = "#9E00FF";
-const trailColor = "#2EB9DF";
-const starWidth = 10;
-const starHeight = 1;
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-function createStars() {
-    for (let i = 0; i < starCount; i++) {
-        stars.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            radius: Math.random() * 1.5,
-            brightness: Math.random()
-        });
-    }
-}
-
-function drawStars() {
-    stars.forEach(star => {
-        star.brightness = 0.5 + 0.5 * Math.sin(Date.now() * 0.002 + star.y * 0.01);
-        ctx.fillStyle = `rgba(255, 255, 255, ${star.brightness})`;
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fill();
-    });
-}
-
-function getRandomStartPoint() {
-    const side = Math.floor(Math.random() * 4);
-    let x, y, angle;
-    const offsetX = Math.random() * canvas.width;
-    const offsetY = Math.random() * canvas.height;
-
-    switch (side) {
-        case 0: // top
-            x = offsetX;
-            y = 0;
-            angle = Math.random() * 90 + 45; // Random angle between 45 and 135
-            break;
-        case 1: // right
-            x = canvas.width;
-            y = offsetY;
-            angle = Math.random() * 90 + 135; // Random angle between 135 and 225
-            break;
-        case 2: // bottom
-            x = offsetX;
-            y = canvas.height;
-            angle = Math.random() * 90 + 225; // Random angle between 225 and 315
-            break;
-        case 3: // left
-            x = 0;
-            y = offsetY;
-            angle = Math.random() * 90 + 315; // Random angle between 315 and 405
-            break;
-        default:
-            x = 0;
-            y = 0;
-            angle = 45;
-    }
-    return { x, y, angle };
-}
-
-function createMeteor() {
-    const { x, y, angle } = getRandomStartPoint();
-    const speed = Math.random() * (maxSpeed - minSpeed) + minSpeed;
-    const meteor = {
-        x: x,
-        y: y,
-        speed: speed,
-        angle: angle * (Math.PI / 180), // Convert degrees to radians
-        distance: 0,
-        scale: 1,
-        id: Date.now()
-    };
-    meteors.push(meteor);
-}
-
-function drawMeteors() {
-    meteors.forEach((meteor, index) => {
-        meteor.x += meteor.speed * Math.cos(meteor.angle);
-        meteor.y += meteor.speed * Math.sin(meteor.angle);
-        meteor.distance += meteor.speed;
-        meteor.scale = 1 + meteor.distance / 100;
-
-        // Remove meteor if it's off-screen
-        if (
-            meteor.x < -50 ||
-            meteor.x > canvas.width + 50 ||
-            meteor.y < -50 ||
-            meteor.y > canvas.height + 50
-        ) {
-            meteors.splice(index, 1);
-            return;
-        }
-
-        // Save context
-        ctx.save();
-
-        // Move to meteor's position
-        ctx.translate(meteor.x, meteor.y);
-
-        // Rotate context
-        ctx.rotate(meteor.angle);
-
-        // Create gradient
-        const width = starWidth * meteor.scale;
-        const height = starHeight;
-
-        const gradient = ctx.createLinearGradient(0, 0, width, 0);
-        gradient.addColorStop(0, `rgba(${hexToRgb(trailColor)}, 0)`);
-        gradient.addColorStop(1, `rgba(${hexToRgb(starColor)}, 1)`);
-
-        ctx.fillStyle = gradient;
-
-        // Draw rectangle (meteor trail)
-        ctx.fillRect(0, -height / 2, width, height);
-
-        // Restore context
-        ctx.restore();
-    });
-}
-
-function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawStars();
-    drawMeteors();
-    requestAnimationFrame(animate);
-}
-
-function scheduleMeteor() {
-    const randomDelay = Math.random() * (maxDelay - minDelay) + minDelay;
-    setTimeout(() => {
-        createMeteor();
-        scheduleMeteor();
-    }, randomDelay);
-}
-
-function hexToRgb(hex) {
-    // Convert hex color code to RGB values
-    let bigint = parseInt(hex.replace("#", ""), 16);
-    let r = (bigint >> 16) & 255;
-    let g = (bigint >> 8) & 255;
-    let b = bigint & 255;
-    return `${r}, ${g}, ${b}`;
-}
-
-window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
-
-// Start the stars and meteors animation
-createStars();
-animate();
-scheduleMeteor();
-</script>
-   <script src="uv/uv.bundle.js" charset="UTF-8" defer></script>
-      <script src="uv/uv.config.js" charset="UTF-8" defer></script>
-      <script src="register-sw.js" charset="UTF-8" defer></script>
-      <script src="search.js" charset="UTF-8" defer></script>
-      <script src="index.js" charset="UTF-8" defer></script>
    </body>
 </html>
